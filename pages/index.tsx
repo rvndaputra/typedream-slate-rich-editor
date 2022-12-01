@@ -13,17 +13,17 @@ import {
   ALIGN_HOTKEYS,
   FORMATTED_HOTKEYS,
   INITIAL_SLATE_VALUE,
-} from "./model/constants";
-import type { CustomEditor, CustomElement, CustomText } from "./model/types";
+} from "../model/constants";
+import type { CustomEditor, CustomElement, CustomText } from "../model/types";
 
-import Leaf from "./components/Leaf";
-import SwitchElement from "./components/SwitchElement";
+import Leaf from "../components/Leaf";
+import SwitchElement from "../components/SwitchElement";
+import BlockButton from "../components/BlockButton";
+import MarkButton from "../components/MarkButton";
 
-import BlockButton from "./components/BlockButton";
-import MarkButton from "./components/MarkButton";
-import Toolbar from "./presentation/Toolbar";
+import Toolbar from "../presentation/Toolbar";
 
-import useToggleEvent from "./usecase/use-toggle-event";
+import useToggleEvent from "../usecase/use-toggle-event";
 
 declare module "slate" {
   interface CustomTypes {
